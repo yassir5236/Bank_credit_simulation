@@ -15,15 +15,15 @@
   <h1>Demander mon crédit en ligne</h1>
 
 
-  <div class="container">
+  <div class="container1">
     <div class="container-block">
-      <div class="block"> 1 Simuler mon crédit</div>
-      <div class="block"> 2 Mes coordonnées</div>
-      <div class="block"> 3 Mes infos personnelles</div>
+      <div class="block"> <span class="numbers">1</span><br> Simuler mon crédit</div>
+      <div class="block"> <span class="numbers">2</span><br> Mes coordonnées</div>
+      <div class="block"> <span class="numbers">3</span><br> Mes infos personnelles</div>
     </div>
 
 
-    <form class="simuler_mon_credit" action="">
+    <form class="simuler-mon-credit" action="">
       <h3>Mon projet</h3>
       <select class="mon_projet" name="">
         <option value="">Jai besoin d'argent</option>
@@ -52,13 +52,13 @@
       </div>
 
       <div class="duree_group">
-        <label for="amount">Montant (en DH)</label><br>
+        <label for="amount">Durée (en mois)</label><br>
         <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
         <input type="range" id="amount-slider" min="5000" max="400000" value="158000" oninput="syncAmount()">
       </div>
 
       <div class="mensualite-group">
-        <label for="amount">Montant (en DH)</label><br>
+        <label for="amount">Mensuialités (en DH)</label><br>
         <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
         <input type="range" id="amount-slider" min="5000" max="400000" value="158000" oninput="syncAmount()">
       </div>
@@ -71,6 +71,138 @@
         <button class="button-form1">
           <span class="span-bouton1">Continuer</span><br> Sans engagement
         </button>
+      </div>
+
+      <div class="footer">
+        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
+          Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
+        </p>
+        <br>
+        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
+          Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
+        </p>
+      </div>
+
+
+
+
+    </form>
+
+  </div>
+
+  <div class="container2">
+    <div class="container-block">
+      <div class="block"> <span class="numbers">1</span><br> Simuler mon crédit</div>
+      <div class="block"> <span class="numbers">2</span><br> Mes coordonnées</div>
+      <div class="block"> <span class="numbers">3</span><br> Mes infos personnelles</div>
+    </div>
+
+
+    <form class="mes-coordonnées" action="">
+      <input type="email" placeholder="Email*">
+      <input type="tel" placeholder="Téléphone mobile*">
+
+      <div class="divBoutton">
+        <button class="button-form1">
+          <span class="span-bouton1">Continuer</span><br> Sans engagement
+        </button>
+      </div>
+
+      <div class="footer">
+        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
+          Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
+        </p>
+        <br>
+        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
+          Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
+        </p>
+      </div>
+
+
+
+
+    </form>
+
+  </div>
+
+  <div class="container3">
+    <div class="container-block">
+      <div class="block"> <span class="numbers">1</span><br> Simuler mon crédit</div>
+      <div class="block"> <span class="numbers">2</span><br> Mes coordonnées</div>
+      <div class="block"> <span class="numbers">3</span><br> Mes infos personnelles</div>
+    </div>
+
+
+    <form class="mes-infos-personnelles" action="">
+
+
+      <div class="div-mes-infos-personnelles">
+        <h3 class="civilite">Civilité</h3>
+        <div class="input-radio">
+          <input type="radio" placeholder="">
+          <label for="">Madame</label>
+        </div>
+
+        <div class="input-radio">
+          <input type="radio" placeholder="">
+          <label for="">Mademoiselle</label>
+        </div>
+
+
+        <div class="input-radio">
+          <input type="radio" placeholder="">
+          <label for="">Madame</label>
+        </div>
+      <!-- </div> -->
+
+      <div class="div2-mes-infos-personnelles">
+        <input type="text" placeholder="Nom">
+        <input type="text" placeholder="Prénom*">
+        <input type="number" placeholder="Numéro CIN / Carte de séjour*">
+        <input type="date" placeholder="Date de naissance JJ/MM/YYYY*">
+        <input type="date" placeholder="Date d'embauche/début de l'activité*">
+        <input type="number" placeholder="Total revenus mensuels (net en DH)*">
+      </div>
+    </div>
+
+      <p>Avez vous des crédits en cours ?</p>
+
+      <div class="input-radio">
+        <input type="radio" placeholder="">
+        <label for="">Oui</label>
+      </div>
+
+      <div class="input-radio">
+        <input type="radio" placeholder="">
+        <label for="">Nom</label>
+      </div>
+
+      <input type="checkbox">
+      <label for="checkbox">J'ai lu et j'accepte les conditions générales d'utilisation figurant sur les informations
+        légales, notamment la mention relative à la protection des données personnelles</label>
+
+
+
+      <div class="demander-ce-credit">
+        <button class="button-form1">
+          <span class="span-bouton1">Continuer</span><br> Sans engagement
+        </button>
+      </div>
+
+      <div class="voir-mon-récapitulatif">
+        <button class="button-form1">
+          <span class="span-bouton1">Continuer</span><br> Sans engagement
+        </button>
+      </div>
+
+      <div class="footer">
+        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
+          Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
+        </p>
+        <br>
+        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
+          Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
+        </p>
       </div>
 
 
