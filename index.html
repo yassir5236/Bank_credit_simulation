@@ -24,7 +24,7 @@
 
 
     <form class="simuler-mon-credit" action="">
-      <h3>Mon projet</h3>
+      <h3 >Mon projet</h3>
       <select class="mon_projet" name="">
         <option value="">Jai besoin d'argent</option>
         <option value="">Je finance mon véhicule d'occasion</option>
@@ -48,19 +48,19 @@
       <div class="montant_group">
         <label for="amount">Montant (en DH)</label><br>
         <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
-        <input type="range" id="amount-slider" min="5000" max="400000" value="158000" oninput="syncAmount()">
+        <input type="range"  min="5000" max="400000" value="158000" class="slider" id="myRange" oninput="syncAmount()">
       </div>
 
       <div class="duree_group">
         <label for="amount">Durée (en mois)</label><br>
         <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
-        <input type="range" id="amount-slider" min="5000" max="400000" value="158000" oninput="syncAmount()">
+        <input type="range"  min="5000" max="400000" value="158000" class="slider" id="myRange" oninput="syncAmount()">
       </div>
 
       <div class="mensualite-group">
         <label for="amount">Mensuialités (en DH)</label><br>
         <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
-        <input type="range" id="amount-slider" min="5000" max="400000" value="158000" oninput="syncAmount()">
+        <input type="range"  min="5000" max="400000" value="158000" class="slider" id="myRange" oninput="syncAmount()">
       </div>
 
 
@@ -153,46 +153,51 @@
           <input type="radio" placeholder="">
           <label for="">Madame</label>
         </div>
-      <!-- </div> -->
+        <!-- </div> -->
 
-      <div class="div2-mes-infos-personnelles">
-        <input type="text" placeholder="Nom">
-        <input type="text" placeholder="Prénom*">
-        <input type="number" placeholder="Numéro CIN / Carte de séjour*">
-        <input type="date" placeholder="Date de naissance JJ/MM/YYYY*">
-        <input type="date" placeholder="Date d'embauche/début de l'activité*">
-        <input type="number" placeholder="Total revenus mensuels (net en DH)*">
-      </div>
-    </div>
-
-      <p>Avez vous des crédits en cours ?</p>
-
-      <div class="input-radio">
-        <input type="radio" placeholder="">
-        <label for="">Oui</label>
+        <div class="div2-mes-infos-personnelles">
+          <input type="text" placeholder="Nom">
+          <input type="text" placeholder="Prénom*">
+          <input type="number" placeholder="Numéro CIN / Carte de séjour*">
+          <input type="date" placeholder="Date de naissance JJ/MM/YYYY*">
+          <input type="date" placeholder="Date d'embauche/début de l'activité*">
+          <input type="number" placeholder="Total revenus mensuels (net en DH)*">
+        </div>
       </div>
 
-      <div class="input-radio">
-        <input type="radio" placeholder="">
-        <label for="">Nom</label>
+
+      <div class="input-radio2">
+        <p>Avez vous des crédits en cours ?</p>
+        <div class="input-radio">
+          <input type="radio" placeholder="">
+          <label for="">Oui</label>
+        </div>
+
+        <div class="input-radio">
+          <input type="radio" placeholder="">
+          <label for="">Nom</label>
+        </div>
       </div>
 
-      <input type="checkbox">
-      <label for="checkbox">J'ai lu et j'accepte les conditions générales d'utilisation figurant sur les informations
-        légales, notamment la mention relative à la protection des données personnelles</label>
-
-
-
-      <div class="demander-ce-credit">
-        <button class="button-form1">
-          <span class="span-bouton1">Continuer</span><br> Sans engagement
-        </button>
+      <div style="padding-right: 60px; padding-left: 60px; padding-top: 20px;">
+        <input type="checkbox">
+        <label style="font-size: 14px;" for="checkbox">J'ai lu et j'accepte les conditions générales d'utilisation
+          figurant sur les informations
+          légales, notamment la mention relative à la protection des données personnelles</label>
       </div>
 
-      <div class="voir-mon-récapitulatif">
-        <button class="button-form1">
-          <span class="span-bouton1">Continuer</span><br> Sans engagement
-        </button>
+      <div class="fix-position-button">
+        <!-- <div class="demander-ce-credit"> -->
+          <button class="button-form1">
+            <span class="span-bouton1">Continuer</span><br> Sans engagement
+          </button>
+        <!-- </div> -->
+
+        <!-- <div class="voir-mon-récapitulatif"> -->
+          <button class="button-form1">
+            <span class="span-bouton1">Continuer</span><br> Sans engagement
+          </button>
+        <!-- </div> -->
       </div>
 
       <div class="footer">

@@ -1,5 +1,49 @@
 $body-color: #F1F2F6;
 $body-font: 'Roboto', Arial, sans-serif;
+$text-color: #30435c;
+$font-size : 14px;
+
+
+
+$slider-height: 1px;
+$slider-width: 100%;
+// $slider-thumb-size: 1000px;
+// 
+
+
+.slider-container {
+  width: $slider-width;
+  margin: 120px 0;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: $slider-width;
+  height: $slider-height;
+  background: $slider-track-color;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 * {
     box-sizing: border-box;
@@ -47,6 +91,11 @@ h1{
 
 }
 
+h3{
+    width: 100%;
+  
+}
+
 .simuler-mon-credit , .mes-coordonnées , .mes-infos-personnelles{
     align-items: center;
     width:auto;
@@ -63,12 +112,13 @@ h1{
 
 
 .mon_projet{
+    font-size: $font-size;
     width: 100%;
     padding: 16px 20px;
     border-style: solid;
     border-radius: 4px;
     background-color: #f1f1f1;
-    margin: 20px auto;
+    margin: 5px 20px 20px ;
 }
 
 .je_suis{
@@ -77,7 +127,7 @@ h1{
     // border-style: solid;
     border-radius: 4px;
     background-color: #f1f1f1;
-    margin: 20px auto;
+    margin: 5px 20px 20px ;
 
 }
 
@@ -119,11 +169,12 @@ cursor: pointer;
 
 .footer{
     font-size: 12px;
-    color: #30435c;
-    ;
+    color:$text-color;
+    
     background-color: #F1F2F6;
    
     margin: 20px 0px;
+    
 }
 
 input[type="tel"], input[type="email"] , input[type="number"], input[type="text"], input[type="date"] {
@@ -134,46 +185,74 @@ input[type="tel"], input[type="email"] , input[type="number"], input[type="text"
     box-sizing: border-box;
 }
 
-  input[type="number"], input[type="text"], input[type="date"] {
+input[type="number"], input[type="text"], input[type="date"] {
     width: 100%;
     padding: 10px;
     border: none;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 18px;
+ 
+    
 }
 
 .div-mes-infos-personnelles{
-    padding: 60px;
+    
+    padding-right: 60px ;
+    padding-left: 60px;
+    margin-bottom:40px ;
     width: 100%;
     // background-color: #9c3333;
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 10px;
+
     
 }
 
 .input-radio {
 
-color: #30435c;
+color: $text-color;
+
+}
+
+.input-radio2{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
 
 }
 
 .civilite{
     font-size: 14px;
-    color: #30435c;
+    color: $text-color;
     
 }
 
-// .div2-mes-infos-personnelles{
-//     // display: flex;
-//     // flex-direction: column;
-//     // align-items: center;
-
-//     // gap: 10px;
-//     width: 100%;
+.div2-mes-infos-personnelles{
     
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: $text-color;
+    
+}
+
+//  .demander-ce-credit{
+//     width: 100%;
+//     background-color: #30435c;
+//     display: flex;
 // }
+.fix-position-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
 
 
 
