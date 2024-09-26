@@ -22,7 +22,7 @@
       </select>
 
       <h3>Je suis</h3>
-      <select id="" name="">
+      <select class="je_suis"  id="" name="">
         <option value="">Salarié du secteur privé</option>
         <option value="">Fonctionnaire</option>
         <option value="">profession libérale</option>
@@ -33,11 +33,33 @@
 
       </select>
 
-      <input type="text"><br>
-      <input type="text"><br>
-      <input type="text"><br>
-      <br>
-      <input type="submit" name="" id="">
+      <div class="montant_group">
+        <label for="amount">Montant (en DH)</label><br>
+        <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
+        <input type="range" id="amount-slider" min="5000" max="400000" value="158000" oninput="syncAmount()">
+      </div>
+
+      <div class="duree_group">
+        <label for="amount">Montant (en DH)</label><br>
+        <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
+        <input type="range" id="amount-slider" min="5000" max="400000" value="158000" oninput="syncAmount()">
+      </div>
+
+      <div class="mensualite-group">
+        <label for="amount">Montant (en DH)</label><br>
+        <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
+        <input type="range" id="amount-slider" min="5000" max="400000" value="158000" oninput="syncAmount()">
+      </div>
+
+
+   
+
+      
+  <div class="divBoutton">
+    <button class="button-form1">
+    <span class="span-bouton1">Continuer</span><br> Sans engagement
+   </button>
+  </div>
 
 
 
