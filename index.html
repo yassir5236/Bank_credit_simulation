@@ -8,214 +8,255 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
 
+
   <title>Document</title>
 </head>
 
 <body>
   <h1>Demander mon crédit en ligne</h1>
+  <div class="contenaire-global">
+ 
 
 
-  <div class="container1">
-    <div class="container-block">
-      <div class="block"> <span class="numbers">1</span><br> Simuler mon crédit</div>
-      <div class="block"> <span class="numbers">2</span><br> Mes coordonnées</div>
-      <div class="block"> <span class="numbers">3</span><br> Mes infos personnelles</div>
+
+    <div class="block-and-container">
+
+      <div class="container-block">
+        <div id="block1" class="block"> <span class="numbers">1</span><br> Simuler mon crédit</div>
+        <div id="block2" class="block"> <span class="numbers">2</span><br> Mes coordonnées</div>
+        <div id="block3" class="block"> <span class="numbers">3</span><br> Mes infos personnelles</div>
+      </div>
+
+      <div id="container1" class="container1">
+
+
+
+        <form class="simuler-mon-credit" action="">
+          <h3>Mon projet</h3>
+          <select class="mon_projet" name="">
+            <option value="">Jai besoin d'argent</option>
+            <option value="">Je finance mon véhicule d'occasion</option>
+            <option value="">Je Gér mes imprévus</option>
+            <option value="">Je finance mon véhicule neuf</option>
+            <option value="">J'équipe ma maison</option>
+          </select>
+
+          <h3>Je suis</h3>
+          <select class="je_suis" id="" name="">
+            <option value="">Salarié du secteur privé</option>
+            <option value="">Fonctionnaire</option>
+            <option value="">profession libérale</option>
+            <option value="">Commerçant</option>
+            <option value="">Retraité</option>
+            <option value="">Autres professions</option>
+
+
+          </select>
+
+          <div class="montant_group">
+            <label for="amount">Montant (en DH)</label><br>
+            <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
+            <input type="range" min="5000" max="400000" value="158000"  id="myRange"
+              oninput="syncAmount()">
+          </div>
+
+          <div class="duree_group">
+            <label for="amount">Durée (en mois)</label><br>
+            <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
+            <input type="range" min="5000" max="400000" value="158000"  id="myRange"
+              oninput="syncAmount()">
+          </div>
+
+          <div class="mensualite-group">
+            <label for="amount">Mensuialités (en DH)</label><br>
+            <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
+            <input type="range" min="5000" max="400000" value="158000"  id="myRange"
+              oninput="syncAmount()">
+          </div>
+
+
+
+
+
+          <div class="divBoutton">
+            <button class="button-form1">
+              <span class="span-bouton1">Continuer</span><br> Sans engagement
+            </button>
+          </div>
+
+          <div class="footer">
+            <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
+              Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions
+              préférentielles.
+            </p>
+            <br>
+            <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
+              Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions
+              préférentielles.
+            </p>
+          </div>
+
+
+
+
+        </form>
+
+      </div>
+
+      <div id="container2" style="display: none;" class="container2">
+        <!-- <div class="container-block">
+      <div id="block1"     class="block"> <span class="numbers">1</span><br> Simuler mon crédit</div>
+      <div id="block2"     class="block"> <span class="numbers">2</span><br> Mes coordonnées</div>
+      <div id="block3"     class="block"> <span class="numbers">3</span><br> Mes infos personnelles</div>
+    </div> -->
+
+
+        <form class="mes-coordonnées" action="">
+          <input type="email" placeholder="Email*">
+          <input type="tel" placeholder="Téléphone mobile*">
+
+          <div class="divBoutton">
+            <button class="button-form1">
+              <span class="span-bouton1">Continuer</span><br> Sans engagement
+            </button>
+          </div>
+
+          <div class="footer">
+            <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
+              Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions
+              préférentielles.
+            </p>
+            <br>
+            <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
+              Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions
+              préférentielles.
+            </p>
+          </div>
+
+
+
+
+        </form>
+
+      </div>
+
+      <div id="container3" style="display: none;" class="container3">
+        <!-- <div class="container-block">
+      <div id="block1"  class="block"> <span class="numbers">1</span><br> Simuler mon crédit</div>
+      <div id="block2"  class="block"> <span class="numbers">2</span><br> Mes coordonnées</div>
+      <div id="block3"  class="block"> <span class="numbers">3</span><br> Mes infos personnelles</div>
+    </div> -->
+
+
+        <form class="mes-infos-personnelles" action="">
+
+
+          <div class="div-mes-infos-personnelles">
+            <h3 class="civilite">Civilité</h3>
+            <div class="input-radio">
+              <input type="radio" placeholder="">
+              <label for="">Madame</label>
+            </div>
+
+            <div class="input-radio">
+              <input type="radio" placeholder="">
+              <label for="">Mademoiselle</label>
+            </div>
+
+
+            <div class="input-radio">
+              <input type="radio" placeholder="">
+              <label for="">Madame</label>
+            </div>
+            <!-- </div> -->
+
+            <div class="div2-mes-infos-personnelles">
+              <input type="text" placeholder="Nom">
+              <input type="text" placeholder="Prénom*">
+              <input type="number" placeholder="Numéro CIN / Carte de séjour*">
+              <input type="date" placeholder="Date de naissance JJ/MM/YYYY*">
+              <input type="date" placeholder="Date d'embauche/début de l'activité*">
+              <input type="number" placeholder="Total revenus mensuels (net en DH)*">
+            </div>
+          </div>
+
+
+          <div class="input-radio2">
+            <p>Avez vous des crédits en cours ?</p>
+            <div class="input-radio">
+              <input type="radio" placeholder="">
+              <label for="">Oui</label>
+            </div>
+
+            <div class="input-radio">
+              <input type="radio" placeholder="">
+              <label for="">Nom</label>
+            </div>
+          </div>
+
+          <div style="padding-right: 60px; padding-left: 60px; padding-top: 20px;">
+            <input type="checkbox">
+            <label style="font-size: 14px;" for="checkbox">J'ai lu et j'accepte les conditions générales d'utilisation
+              figurant sur les informations
+              légales, notamment la mention relative à la protection des données personnelles</label>
+          </div>
+
+          <div class="fix-position-button">
+            <!-- <div class="demander-ce-credit"> -->
+            <button class="button-form1">
+              <span class="span-bouton1">Continuer</span><br> Sans engagement
+            </button>
+            <!-- </div> -->
+
+            <!-- <div class="voir-mon-récapitulatif"> -->
+            <button class="button-form1">
+              <span class="span-bouton1">Continuer</span><br> Sans engagement
+            </button>
+            <!-- </div> -->
+          </div>
+
+          <div class="footer">
+            <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
+              Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions
+              préférentielles.
+            </p>
+            <br>
+            <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
+              Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions
+              préférentielles.
+            </p>
+          </div>
+
+
+
+
+        </form>
+
+      </div>
+
     </div>
 
+    <div class="recap">Mon récapitulatif
+      <h3>Mon projet</h3>
+      <p>Revolving</p>
+      <p>Détails de mon crédit</p>
+      <p>Vous êtes:</p>
+      <p>Montant:</p>
+      <p>Durée:</p>
+      <p>Mensualité:</p>
+      <p>Frais de dossier::</p>
 
-    <form class="simuler-mon-credit" action="">
-      <h3 >Mon projet</h3>
-      <select class="mon_projet" name="">
-        <option value="">Jai besoin d'argent</option>
-        <option value="">Je finance mon véhicule d'occasion</option>
-        <option value="">Je Gér mes imprévus</option>
-        <option value="">Je finance mon véhicule neuf</option>
-        <option value="">J'équipe ma maison</option>
-      </select>
-
-      <h3>Je suis</h3>
-      <select class="je_suis" id="" name="">
-        <option value="">Salarié du secteur privé</option>
-        <option value="">Fonctionnaire</option>
-        <option value="">profession libérale</option>
-        <option value="">Commerçant</option>
-        <option value="">Retraité</option>
-        <option value="">Autres professions</option>
-
-
-      </select>
-
-      <div class="montant_group">
-        <label for="amount">Montant (en DH)</label><br>
-        <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
-        <input type="range"  min="5000" max="400000" value="158000" class="slider" id="myRange" oninput="syncAmount()">
-      </div>
-
-      <div class="duree_group">
-        <label for="amount">Durée (en mois)</label><br>
-        <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
-        <input type="range"  min="5000" max="400000" value="158000" class="slider" id="myRange" oninput="syncAmount()">
-      </div>
-
-      <div class="mensualite-group">
-        <label for="amount">Mensuialités (en DH)</label><br>
-        <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
-        <input type="range"  min="5000" max="400000" value="158000" class="slider" id="myRange" oninput="syncAmount()">
-      </div>
-
-
-
-
-
-      <div class="divBoutton">
-        <button class="button-form1">
-          <span class="span-bouton1">Continuer</span><br> Sans engagement
-        </button>
-      </div>
-
-      <div class="footer">
-        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
-          Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
-        </p>
-        <br>
-        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
-          Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
-        </p>
-      </div>
-
-
-
-
-    </form>
+    </div>
 
   </div>
 
-  <div class="container2">
-    <div class="container-block">
-      <div class="block"> <span class="numbers">1</span><br> Simuler mon crédit</div>
-      <div class="block"> <span class="numbers">2</span><br> Mes coordonnées</div>
-      <div class="block"> <span class="numbers">3</span><br> Mes infos personnelles</div>
-    </div>
-
-
-    <form class="mes-coordonnées" action="">
-      <input type="email" placeholder="Email*">
-      <input type="tel" placeholder="Téléphone mobile*">
-
-      <div class="divBoutton">
-        <button class="button-form1">
-          <span class="span-bouton1">Continuer</span><br> Sans engagement
-        </button>
-      </div>
-
-      <div class="footer">
-        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
-          Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
-        </p>
-        <br>
-        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
-          Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
-        </p>
-      </div>
 
 
 
 
-    </form>
-
-  </div>
-
-  <div class="container3">
-    <div class="container-block">
-      <div class="block"> <span class="numbers">1</span><br> Simuler mon crédit</div>
-      <div class="block"> <span class="numbers">2</span><br> Mes coordonnées</div>
-      <div class="block"> <span class="numbers">3</span><br> Mes infos personnelles</div>
-    </div>
 
 
-    <form class="mes-infos-personnelles" action="">
-
-
-      <div class="div-mes-infos-personnelles">
-        <h3 class="civilite">Civilité</h3>
-        <div class="input-radio">
-          <input type="radio" placeholder="">
-          <label for="">Madame</label>
-        </div>
-
-        <div class="input-radio">
-          <input type="radio" placeholder="">
-          <label for="">Mademoiselle</label>
-        </div>
-
-
-        <div class="input-radio">
-          <input type="radio" placeholder="">
-          <label for="">Madame</label>
-        </div>
-        <!-- </div> -->
-
-        <div class="div2-mes-infos-personnelles">
-          <input type="text" placeholder="Nom">
-          <input type="text" placeholder="Prénom*">
-          <input type="number" placeholder="Numéro CIN / Carte de séjour*">
-          <input type="date" placeholder="Date de naissance JJ/MM/YYYY*">
-          <input type="date" placeholder="Date d'embauche/début de l'activité*">
-          <input type="number" placeholder="Total revenus mensuels (net en DH)*">
-        </div>
-      </div>
-
-
-      <div class="input-radio2">
-        <p>Avez vous des crédits en cours ?</p>
-        <div class="input-radio">
-          <input type="radio" placeholder="">
-          <label for="">Oui</label>
-        </div>
-
-        <div class="input-radio">
-          <input type="radio" placeholder="">
-          <label for="">Nom</label>
-        </div>
-      </div>
-
-      <div style="padding-right: 60px; padding-left: 60px; padding-top: 20px;">
-        <input type="checkbox">
-        <label style="font-size: 14px;" for="checkbox">J'ai lu et j'accepte les conditions générales d'utilisation
-          figurant sur les informations
-          légales, notamment la mention relative à la protection des données personnelles</label>
-      </div>
-
-      <div class="fix-position-button">
-        <!-- <div class="demander-ce-credit"> -->
-          <button class="button-form1">
-            <span class="span-bouton1">Continuer</span><br> Sans engagement
-          </button>
-        <!-- </div> -->
-
-        <!-- <div class="voir-mon-récapitulatif"> -->
-          <button class="button-form1">
-            <span class="span-bouton1">Continuer</span><br> Sans engagement
-          </button>
-        <!-- </div> -->
-      </div>
-
-      <div class="footer">
-        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
-          Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
-        </p>
-        <br>
-        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client
-          Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
-        </p>
-      </div>
-
-
-
-
-    </form>
-
-  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
