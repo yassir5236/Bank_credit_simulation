@@ -51,12 +51,14 @@ h1{
             display: flex;
             flex-direction: column;
             gap:20px;
-            // display: none;
+            display: none;
         }
         .infos-personnelles{
             display: flex;
             flex-direction: column;
             gap:20px;
+            display: none;
+
         }
 
 
@@ -154,7 +156,7 @@ h3{
 
 
 
-.button-form1{
+.button-form1, .button-form2 , .button-form31 , .button-form32{
 width:35%;
 margin-top: 50px;
 border-radius: 6px;
