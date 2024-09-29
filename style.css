@@ -22,14 +22,32 @@ h1 {
 }
 .contenaire-global .recap {
   background-color: white;
-  width: 25%;
+  width: 23%;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  padding: 15px;
+  box-shadow: 0px 2px 10px rgba(46, 45, 45, 0.5);
+  border-radius: 2px;
+}
+.contenaire-global .recap .detait-mon-credit {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contenaire-global .recap .infos-personnelles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .contenaire-global .block-and-container {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   margin: 20px;
 }
 .contenaire-global .block-and-container .container-block {
@@ -43,6 +61,7 @@ h1 {
   background-color: #FDDF35;
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
 }
 .contenaire-global .block-and-container .simuler-mon-credit, .contenaire-global .block-and-container .mes-coordonnées, .contenaire-global .block-and-container .mes-infos-personnelles {
   align-items: center;
@@ -196,6 +215,12 @@ input[type=range]::-webkit-slider-runnable-track {
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
+  background: url("data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIFRyYW5zZm9ybWVkIGJ5OiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyBmaWxsPSIjMDAwMDAwIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4IiB2aWV3Qm94PSIwIDAgNTYgNTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cg08ZyBpZD0iU1ZHUmVwb19iZ0NhcnJpZXIiIHN0cm9rZS13aWR0aD0iMCIvPgoNPGcgaWQ9IlNWR1JlcG9fdHJhY2VyQ2FycmllciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cg08ZyBpZD0iU1ZHUmVwb19pY29uQ2FycmllciI+Cg08cGF0aCBkPSJNIDEzLjgzMjAgNDMuNTYyNSBDIDE0LjQ4ODMgNDMuNTYyNSAxNC45MzM2IDQzLjM1MTYgMTUuNDI1OCA0My4xMTcyIEwgNDEuNzY5NSAzMS4yODEzIEMgNDMuMTA1NSAzMC42NDg0IDQ0LjE2MDIgMjkuNjE3MiA0NC4xNjAyIDI4LjExNzIgQyA0NC4xNjAyIDI2LjY0MDYgNDMuMTI4OSAyNS41NjI1IDQxLjc0NjEgMjQuOTUzMiBMIDE1LjQyNTggMTIuODM1OSBDIDE0Ljk1NzAgMTIuNjAxNiAxNC41MzUxIDEyLjQzNzUgMTMuOTI1OCAxMi40Mzc1IEMgMTIuNzA3MCAxMi40Mzc1IDExLjgzOTggMTMuMjgxMyAxMS44Mzk4IDE0LjUyMzUgQyAxMS44Mzk4IDE1LjYwMTYgMTIuNDAyMyAxNi4yMTEwIDEzLjM4NjcgMTYuNjc5NyBMIDM4LjYwNTUgMjcuODEyNSBMIDM4LjYwNTUgMjguMDcwMyBMIDEzLjM4NjcgMzkuMjk2OSBDIDEyLjQwMjMgMzkuNzY1NiAxMS44Mzk4IDQwLjM3NTAgMTEuODM5OCA0MS40NTMxIEMgMTEuODM5OCA0Mi43NDIyIDEyLjY4MzYgNDMuNTYyNSAxMy44MzIwIDQzLjU2MjUgWiIvPgoNPC9nPgoNPC9zdmc+");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border: none;
   margin-top: -30px;
   background-color: #FDDF35;
   height: 2rem;

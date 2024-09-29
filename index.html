@@ -15,7 +15,7 @@
 <body>
   <h1>Demander mon crédit en ligne</h1>
   <div class="contenaire-global">
- 
+
 
 
 
@@ -53,34 +53,54 @@
 
           </select>
 
-          <div class="montant_group">
+          <!-- <div class="montant_group">
             <label for="amount">Montant (en DH)</label><br>
-            <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
-            <input type="range" min="5000" max="400000" value="158000"  id="myRange"
-              oninput="syncAmount()">
+            <input type="number" id="amount" value="158000" oninput="syncAmount()"><br>
+            <input type="range" min="5000" max="400000" value="158000"  id="amountRange" oninput="syncAmount()">
+              
           </div>
 
           <div class="duree_group">
             <label for="amount">Durée (en mois)</label><br>
-            <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
-            <input type="range" min="5000" max="400000" value="158000"  id="myRange"
-              oninput="syncAmount()">
+            <input type="number" id="duration" value="158000" oninput="syncDuration()"><br>
+            <input type="range" min="5000" max="400000" value="158000"  id="durationRange" oninput="syncDuration()
+            ">
           </div>
 
           <div class="mensualite-group">
             <label for="amount">Mensuialités (en DH)</label><br>
-            <input type="number" id="amount" value="158000" oninput="updateForm()"><br>
-            <input type="range" min="5000" max="400000" value="158000"  id="myRange"
-              oninput="syncAmount()">
+            <input type="number" id="mensualite" value="158000" oninput="syncMensualite()"><br>
+            <input type="range" min="5000" max="400000" value="158000" id="mensualiteRange" oninput="syncMensualite()">
+              
+          </div> -->
+
+
+
+
+          <div class="montant_group">
+            <label for="amount">Montant (en DH)</label><br>
+            <input type="number" id="amount" value="158000" oninput="updateMontant()"><br>
+            <input type="range" min="5000" max="400000" value="158000" id="montantRange" oninput="updateMontant()">
           </div>
 
+          <div class="duree_group">
+            <label for="duree">Durée (en mois)</label><br>
+            <input type="number" id="duree" value="12" oninput="updateDuree()"><br>
+            <input type="range" min="1" max="60" value="12" id="dureeRange" oninput="updateDuree()">
+          </div>
 
+          <div class="mensualite-group">
+            <label for="mensualite">Mensualités (en DH)</label><br>
+            <input type="number" id="mensualite" value="1580" disabled><br>
+            <input type="range" min="180" max="4000" value="1580" id="mensualiteRange" oninput="updateMensualite()"
+              disabled>
+          </div>
 
 
 
           <div class="divBoutton">
             <button class="button-form1">
-              <span class="span-bouton1">Continuer</span><br> Sans engagement
+              <span id="span-bouton1" class="span-bouton1">Continuer</span><br> Sans engagement
             </button>
           </div>
 
@@ -103,21 +123,19 @@
 
       </div>
 
-      <div id="container2" style="display: none;" class="container2">
-        <!-- <div class="container-block">
-      <div id="block1"     class="block"> <span class="numbers">1</span><br> Simuler mon crédit</div>
-      <div id="block2"     class="block"> <span class="numbers">2</span><br> Mes coordonnées</div>
-      <div id="block3"     class="block"> <span class="numbers">3</span><br> Mes infos personnelles</div>
-    </div> -->
 
+
+
+
+      <div id="container2" style="display: none;" class="container2">
 
         <form class="mes-coordonnées" action="">
           <input type="email" placeholder="Email*">
           <input type="tel" placeholder="Téléphone mobile*">
 
           <div class="divBoutton">
-            <button class="button-form1">
-              <span class="span-bouton1">Continuer</span><br> Sans engagement
+            <button id="button-form1" class="button-form1">
+              <span id="span-bouton2" class="span-bouton2">Continuer</span><br> Sans engagement
             </button>
           </div>
 
@@ -236,15 +254,30 @@
 
     </div>
 
-    <div class="recap">Mon récapitulatif
-      <h3>Mon projet</h3>
-      <p>Revolving</p>
-      <p>Détails de mon crédit</p>
-      <p>Vous êtes:</p>
-      <p>Montant:</p>
-      <p>Durée:</p>
-      <p>Mensualité:</p>
-      <p>Frais de dossier::</p>
+    <div class="recap">
+      <h3 style="display: flex; justify-content: center; color:#30435c ;font-size: 24px;">Mon récapitulatif</h3>
+      <div style="background-color: #F1F2F6; width: 100%;  color:#30435c; font-size: 16px;padding:10px ">Mon projet
+      </div>
+      <p style="color: #02AFBC">Revolving</p>
+
+
+      <div id="infos-personnelles" class="infos-personnelles">
+        <p style="background-color:#F1F2F6 ;    font-size: 16px;  color:#30435c ; width: 100%; padding:10px; ">
+          Coordonnées et infos personnelles</p>
+        <p>Email:</p>
+        <p>Telephone:</p>
+      </div>
+
+
+      <div id="detait-mon-credit" class="detait-mon-credit">
+        <p style="background-color:#F1F2F6 ;    font-size: 16px;  color:#30435c ; width: 100%; padding:10px;  ">Détails
+          de mon crédit</p>
+        <p>Vous êtes:</p>
+        <p>Montant:</p>
+        <p>Durée:</p>
+        <p>Mensualité:</p>
+        <p>Frais de dossier:</p>
+      </div>
 
     </div>
 
